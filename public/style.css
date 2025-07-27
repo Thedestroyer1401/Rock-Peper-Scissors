@@ -1,45 +1,61 @@
-*{
+/* Reset and base styling */
+* {
     margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
-h1{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Header */
+h1 {
     background-color: #081b31;
     color: white;
     height: 5rem;
     line-height: 5rem;
     text-align: center;
 }
-.choice{
+
+/* Game Choices */
+.choice {
     height: 165px;
     width: 165px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease all;
 }
-.choice:hover{
+
+.choice:hover {
     opacity: 0.5;
     cursor: pointer;
     background-color: #081b31;
     border-radius: 50%;
-
 }
-img{
-     height: 150px;
+
+/* Choice Images */
+img {
+    height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
 
+/* Choices Container */
 .choices {
-  display: flex;
-  justify-content: center; /* aligns items horizontally in center */
-  align-items: center;     /* aligns them vertically if needed */
-  gap: 3rem;               /* space between buttons */
-  margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
 }
-.score-bord{
+
+/* Score Board */
+.score-board {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,18 +63,24 @@ img{
     margin-top: 3rem;
     gap: 5rem;
 }
-#comp-score , #user-score{
+
+#user-score,
+#comp-score {
     font-size: 4rem;
+    font-weight: bold;
 }
-.msg-containor{
+
+/* Message Container */
+.msg-container {
     margin-top: 5rem;
 }
-#msg{
+
+#msg {
     margin-top: 5rem;
     background-color: #081b31;
     color: white;
     font-size: 2rem;
-    display: inline;
-    padding: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
     border-radius: 1rem;
 }
